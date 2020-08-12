@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import './directives/high-light.js'
 import './filters/to-uppercase'
-import {store} from './components/store/store'
+import {store} from './store/store'
 
 Vue.config.productionTip = false
 

@@ -7,13 +7,15 @@
 </template>
 
 <script>
+import * as types from '../../store/types'
+
 export default {
   methods: {
     increment () {
-      this.$store.state.counter++
+      this.$store.commit(types.MUTATE_INCREMENT_COUNTER, 1)
     },
     decrement () {
-      this.$store.state.counter--
+      this.$store.commit(types.MUTATE_DECREMENT_COUNTER, 1)
     }
   }
 }
